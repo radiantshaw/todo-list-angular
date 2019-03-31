@@ -106,6 +106,10 @@
 .todo-check {
   margin: 0;
   margin-right: 1em;
+
+  &:checked + span {
+    text-decoration: line-through;
+  }
 }
 
 .todo-remove {
