@@ -1,3 +1,47 @@
-<p>
-  todo-list works!
-</p>
+<div class="todo-list">
+  <input class="todo-input" type="text">
+
+  <div class="todo-control-info">
+    <ul class="todo-filter">
+      <li class="todo-filter-type">
+        <input id="todo-filter-all" name="todo-filter" type="radio" checked>
+        <label class="start" for="todo-filter-all">All</label>
+      </li>
+      <li class="todo-filter-type">
+        <input id="todo-filter-remaining" name="todo-filter" type="radio">
+        <label for="todo-filter-remaining">Remaining</label>
+      </li>
+      <li class="todo-filter-type">
+        <input id="todo-filter-completed" name="todo-filter" type="radio">
+        <label class="end" for="todo-filter-completed">Completed</label>
+      </li>
+    </ul>
+
+    <span class="todo-count">
+      4 iems remaining
+    </span>
+  </div>
+
+  <div class="todo-check-clear-controls">
+    <span class="todo-check-control">
+      <input id="check-all-todo" type="checkbox">
+      <label for="check-all-todo">Check all</label>
+    </span>
+
+    <input class="todo-clear-control" type="button" value="Clear completed">
+  </div>
+
+  <ul class="todo-list-item-list">
+    <li class="todo-list-item">
+      <input class="todo-check" type="checkbox">
+      <span class="todo-title">Some title</span>
+      <a class="todo-remove" href="#">×</a>
+    </li>
+
+    <li class="todo-list-item">
+      <input class="todo-check" type="checkbox">
+      <span class="todo-title">Some title</span>
+      <a class="todo-remove" href="#">×</a>
+    </li>
+  </ul>
+</div>

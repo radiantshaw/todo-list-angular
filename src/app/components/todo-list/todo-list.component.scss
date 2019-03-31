@@ -1,0 +1,120 @@
+.todo-list {
+  max-width: 500px;
+  margin: auto;
+
+  font-family: sans-serif;
+
+  color: #212121;
+}
+
+.todo-input {
+  font-size: 1.8em;
+
+  box-sizing: border-box;
+  padding: 0.3em 0.7em;
+  width: 100%;
+}
+
+.todo-control-info {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-filter {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-filter-type {
+  display: inline;
+}
+
+.todo-filter-type label {
+  padding: 0.3em 0.6em;
+  margin: 0 0.3em;
+  border-radius: 0.2em;
+  
+  cursor: pointer;
+
+  &.start {
+    margin-left: 0;
+  }
+
+  &.end {
+    margin-right: 0;
+  }
+}
+
+[name="todo-filter"] {
+  display: none;
+  
+  &:checked + label {
+    background: #5E35B1;
+    color: #FAFAFA;
+  }
+}
+
+.todo-check-clear-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-check-control {
+  padding: 0.3em 0;
+  
+  & input {
+    cursor: pointer;
+    margin: 0 0.5em 0 0;
+  }
+
+  & label {
+    cursor: pointer;
+  }
+}
+
+.todo-clear-control {
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  background: none;
+  border: 0.1em solid #EF5350;
+  border-radius: 0.2em;
+  font-size: 1em;
+
+  &:hover {
+    color: #FAFAFA;
+    background: #EF5350;
+  }
+}
+
+.todo-list-item-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0.3em 0;
+
+  font-size: 1.6em;
+}
+
+.todo-list-item {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.todo-check {
+  margin: 0;
+  margin-right: 1em;
+}
+
+.todo-remove {
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  color: #BDBDBD;
+
+  &:hover {
+    color: #212121;
+  }
+}
