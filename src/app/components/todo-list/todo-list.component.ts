@@ -73,7 +73,7 @@ export class TodoListComponent {
   }
 
   clearCompletedTodos(): void {
-    this.todos = this.completedTodos();
+    this.todos = this.remainingTodos();
   }
 
   private completedTodos(): Todo[] {
