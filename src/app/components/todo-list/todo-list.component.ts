@@ -66,14 +66,22 @@ export class TodoListComponent {
     if (this.filterType === TodoFilter.ALL) {
       return this.todos;
     } else if (this.filterType === TodoFilter.REMAINING) {
-      return this.todos.filter(todo => !todo.completed)
+      return this.remainingTodos();
     } else if (this.filterType === TodoFilter.COMPLETED) {
-      return this.todos.filter(todo => todo.completed)
+      return this.completedTodos();
     }
   }
 
   clearCompletedTodos(): void {
     this.todos = this.remainingTodos();
+  }
+
+  isNothingCompleted(): boolean {
+    return this.completedTodos().length === 0;
+  }
+
+  areAllCompleted(): boolean {
+    return this.todos.length === this.completedTodos().length;
   }
 
   private completedTodos(): Todo[] {

@@ -87,6 +87,13 @@
     color: #FAFAFA;
     background: #EF5350;
   }
+
+  &:disabled {
+    color: #9E9E9E;
+    border-color: #EF9A9A;
+    cursor: not-allowed;
+    background: none;
+  }
 }
 
 .todo-list-item-list {
@@ -106,6 +113,7 @@
 .todo-check {
   margin: 0;
   margin-right: 1em;
+  cursor: pointer;
 
   &:checked + span {
     text-decoration: line-through;

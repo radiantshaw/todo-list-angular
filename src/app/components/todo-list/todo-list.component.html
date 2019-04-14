@@ -50,6 +50,7 @@
       <input
         id="check-all-todo"
         type="checkbox"
+        [checked]="areAllCompleted()"
         (change)="checkUncheckAllTodos()"
       >
       <label for="check-all-todo">Check all</label>
@@ -59,6 +60,7 @@
       class="todo-clear-control"
       type="button"
       value="Clear completed"
+      [disabled]="isNothingCompleted()"
       (click)="clearCompletedTodos()"
     >
   </div>
