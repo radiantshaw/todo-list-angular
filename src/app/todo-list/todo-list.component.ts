@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { Todo } from '../../interfaces/todo';
-import { TodoFilter } from '../../enums/todo-filter.enum';
+import { Todo } from './todo';
+import { TodoFilter } from './todo-filter.enum';
 
 @Component({
   selector: 'todo-list',
